@@ -70,6 +70,17 @@ The steps include:
     [maintainers](https://github.com/docker-library/official-images/blob/master/MAINTAINERS)
     indicating that the PR is open
 
+* PR machine-readable JSON descriptions of the vulnerabilities to the
+  [core](https://github.com/nodejs/security-wg/tree/master/vuln/core)
+  vulnerability DB. Review the most recent vulnerabilities and follow the same
+  format. Make the version range [semver range](https://ghub.io/semver)
+  compatible and as exhaustive as you can reasonably make it, including EOL
+  release lines if/where possible.
+
+  For `"type"` of vulnerability, attempt to find one or more types listed in
+  the CWE list available at <https://cwe.mitre.org/>. Use the embedded Google
+  search box to narrow down the list from the extensive options available.
+
 * Ensure that the announced CVEs are reported to Mitre as per the
   [cve_management_process](https://github.com/nodejs/security-wg/blob/master/processes/cve_management_process.md).
 
@@ -77,10 +88,6 @@ The steps include:
   as per the the
   [cve_management_process](https://github.com/nodejs/security-wg/blob/master/processes/cve_management_process.md)
   so that they are listed under Announced.
-
-* PR machine-readable JSON descriptions of the vulnerabilities to the
-  [core](https://github.com/nodejs/security-wg/tree/master/vuln/core)
-  vulnerability DB.
 
 * Make sure the PRs for the vulnerabilities are closed
 

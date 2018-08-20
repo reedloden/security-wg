@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "test": "node tools/vuln_valid",
-    "report": "node tools/reporter"
+    "report": "node tools/reporter",
+    "cve_submission_format": "node tools/cve_submission_format/"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +14,7 @@
     "inquirer": "^6.0.0",
     "joi": "^13.1.0",
     "joi-extension-semver": "^2.0.0",
-    "yargs": "^11.0.0"
+    "yargs": "^11.0.0",
+    "semver": "~5.5.0"
   }
 }
